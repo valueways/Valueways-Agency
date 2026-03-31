@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-zinc-900 antialiased selection:bg-zinc-900 selection:text-white;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Custom utility for Apple-style subtle shadow */
+.apple-shadow {
+  box-shadow: 0 2px 40px rgba(0, 0, 0, 0.04);
+}
+
+.glass {
+  @apply bg-white/70 backdrop-blur-xl border-b border-zinc-100/50;
+}
